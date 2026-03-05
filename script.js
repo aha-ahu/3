@@ -21,21 +21,18 @@
 // Editable content - Thay đổi nội dung thư tại đây
 const LETTER_TEXT = `Gửi người lái đò thầm lặng!
 Lời nhắn này đến từ 18 ngôi sao và 1 ngọn cỏ
-Đúng như lời cô nói, thời gian trôi
-nhanh thật cô nhỉ! Mới ngày nào 
-còn chập chững bước vào lớp 10, 
-mà giờ tụi em đã đón kỳ 8/3 cuối 
-cùng dưới mái trường này cùng cô.
-Chúng em chúc cô có một ngày 8/3 
-thật ý nghĩa và ấm áp bên người 
-thân. Cảm ơn cô đã luôn là người lái 
-đò tận tụy, luôn dìu dắt, đưa chúng 
-em đi đúng con đường. Dù sắp tới 
-đây hành trình này phải tạm khép 
-lại, chúng em mong cô luôn dồi dào 
-sức khỏe, trẻ trung và mãi cháy hết 
-mình với nghề giáo. Chúc cô mọi 
-điều tốt đẹp nhất!
+Đúng như lời cô nói, 
+thời gian trôi nhanh thật cô nhỉ! 
+Mới ngày nào còn chập chững bước vào lớp 10, 
+mà giờ tụi em đã đón kỳ 8/3 cuối cùng dưới mái trường này cùng cô. 
+Chúng em chúc cô có một ngày 8/3 thật ý nghĩa và ấm áp bên người thân. 
+Cảm ơn cô đã luôn là người lái đò tận tụy, 
+luôn dìu dắt, 
+đưa chúng em đi đúng con đường. 
+Dù sắp tới đây hành trình này phải tạm khép lại, 
+chúng em mong cô luôn dồi dào sức khỏe, 
+trẻ trung và mãi cháy hết mình với nghề giáo. 
+Chúc cô mọi điều tốt đẹp nhất!
 We love you and wish you all the best! 🍀
 `;
 
