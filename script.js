@@ -294,7 +294,7 @@ function typewriterEffect(text) {
     const lines = text.split('\n');
     let currentLineIndex = 0;
     let charInLine = 0;
-    const maxVisibleLines = 7; // Chỉ hiển thị 7 dòng
+    const maxVisibleLines = 5; // Chỉ hiển thị 7 dòng
 
     function typeNextChar() {
       if (charIndex < totalChars) {
