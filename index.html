@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ứng dụng chúc ngày quốc tế nữ giới" />
+    <title>Chúc Cô 8/3</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Container chính của ứng dụng -->
+    <div class="app-container">
+        
+        <!-- Phần 1: Nút Clapperboard (hiển thị ban đầu) -->
+        <button 
+            id="clapperButton" 
+            class="clapper-button" 
+            aria-label="Bấm vào để chơi video chúc mừng"
+            tabindex="0"
+        >
+            <img src="1.png" alt="Bấm vào để chơi" class="clapper-image" />
+        </button>
+
+        <!-- Phần 2: Video container (ẩn ban đầu) -->
+        <div class="video-wrapper" id="videoWrapper">
+            <video 
+                id="mainVideo" 
+                class="main-video" 
+                playsinline
+                webkit-playsinline
+                preload="auto"
+            >
+                <!-- Thay thế src bằng video.mp4 thực tế của bạn -->
+                <source src="video.mp4" type="video/mp4" />
+                Trình duyệt của bạn không hỗ trợ video HTML5.
+            </video>
+        </div>
+
+        <!-- Phần 3: Audio element (ẩn nhưng phát âm thanh) -->
+        <audio id="bgAudio" preload="auto">
+            <!-- Thay thế src bằng music.mp3 thực tế của bạn -->
+            <source src="music.mp3" type="audio/mpeg" />
+            <source src="music.ogg" type="audio/ogg" />
+            Trình duyệt của bạn không hỗ trợ audio HTML5.
+        </audio>
+
+        <!-- Phần 4: Bức thư (letter) - ẩn ban đầu -->
+        <div class="letter-container" id="letterContainer">
+
+            <!-- Nội dung chính bức thư -->
+            <div class="letter-content">
+                
+<!-- Container ảnh bìa + text overlay -->
+            <div class="letter-cover-container">
+                <div class="letter-cover" id="letterCover">
+                    <img src="letter.jpg" alt="Ảnh bìa thư" class="cover-image" />
+                </div>
+                
+                <!-- Đoạn text với hiệu ứng typewriter - overlay trên ảnh -->
+                <div class="letter-text-wrapper">
+                    <p id="letterText" class="letter-text"></p>
+                    <!-- Dấu cursor cho hiệu ứng gõ máy -->
+                    <span id="textCursor" class="text-cursor"></span>
+                </div>
+                </div>
+
+                <!-- Các ảnh nhỏ của lớp (fade in sau khi text xong) -->
+                <div class="letter-photos" id="letterPhotos">
+                    <img src="class-photo-1.jpg" alt="Ảnh lớp 1" class="photo-item" />
+                    <img src="class-photo-2.jpg" alt="Ảnh lớp 2" class="photo-item" />
+                </div>
+
+                <!-- Nút bật nhạc (fallback nếu audio bị chặn) -->
+                <button id="unmuteBtnFallback" class="unmute-btn" style="display:none;" aria-label="Bật âm thanh">
+                    🔊 Bật nhạc
+                </button>
+            </div>
+        </div>
+
+        <!-- Spinner loading (hiển thị nếu video chưa sẵn sàng) -->
+        <div class="loading-spinner" id="loadingSpinner">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
